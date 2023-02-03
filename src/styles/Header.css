@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+}
+
+.logo img {
+    width: 100%;
+  }
+
+.logo a {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .headerContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 1.5rem 0;
+    }
+  }

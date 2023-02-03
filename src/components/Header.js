@@ -1,12 +1,17 @@
 import React from 'react'
 import Logo from '../images/logo.png'
+import "../styles/Header.css"
+import Nav from '../components/Nav';
 
 function Header() {
   return (
-    <header>
-        <div>
-            <img src={Logo} alt={"Little Lemon"} width={400} height={100} />
+    <header className="header">
+      <div className="headerContainer">
+        <div className="logo">
+          <img src={Logo} alt={"Little Lemon"} />
         </div>
+        <Nav/>
+      </div>
     </header>
   )
 }

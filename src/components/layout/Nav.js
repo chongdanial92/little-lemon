@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from "react";
-import "../styles/Nav.css"
-import HamburgerMenuIconOpen from "../images/hamburger-menu-open.svg";
-import HamburgerMenuIconClose from "../images/hamburger-menu-close.svg";
+import "../../styles/Nav.css"
+import HamburgerMenuIconOpen from "../../images/hamburger-menu-open.svg";
+import HamburgerMenuIconClose from "../../images/hamburger-menu-close.svg";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

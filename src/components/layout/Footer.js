@@ -1,9 +1,9 @@
 import React from 'react'
-import FooterLogo from "../images/logo-vertical-white.png"
-import "../styles/Footer.css"
-import FacebookIcon from "../images/facebook-icon.png"
-import InstagramIcon from "../images/instagram-icon.png"
-import WhatsappIcon from "../images/whatsapp-icon.png"
+import FooterLogo from "../../images/logo-vertical-white.png"
+import "../../styles/Footer.css"
+import FacebookIcon from "../../images/facebook-icon.png"
+import InstagramIcon from "../../images/instagram-icon.png"
+import WhatsappIcon from "../../images/whatsapp-icon.png"
 
 function Footer() {
   return (

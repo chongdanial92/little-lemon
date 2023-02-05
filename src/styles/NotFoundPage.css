@@ -1,0 +1,9 @@
+.not-found-container {
+    padding: 1.5rem 10rem;
+    color: #495E57;
+    font-weight: bold;
+    font-size: 20pt;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}

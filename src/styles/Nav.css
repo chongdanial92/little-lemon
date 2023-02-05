@@ -24,7 +24,6 @@
 
 .navigation-container li {
     display: inline;
-    padding: 10px;
 }
 
 .navigation-container a {
@@ -32,6 +31,10 @@
     color: #000000;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.navigation-container a:hover {
+    color: #F4CE14;
 }
 
 .navigation-menu-open {

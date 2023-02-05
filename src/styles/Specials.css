@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.specials-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 10rem;
+}
+
+.specials-intro {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between
+}
+
+.specials-intro-label {
+    font-family: 'Karla', sans-serif;
+    font-size: 20pt;
+    font-weight: bolder;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.specials-dish-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}

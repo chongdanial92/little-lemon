@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+
+.our-story-section {
+    padding: 1.5rem 10rem;
+}
+
+.our-story-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.our-story-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.our-story-title {
+    font-family: 'Karla', sans-serif;
+    font-size: 20pt;
+    color: #495E57;
+    font-weight: bolder;
+}
+
+.our-story-about-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+}
+
+.display-title {
+    font-family: 'Markazi Text', serif;
+    font-size: 4rem;
+    color: #F4CE14;
+    font-weight: 600;
+  }
+  
+  .display-subtitle {
+    font-family: 'Markazi Text', serif;
+    font-size: 3rem;
+    color: #495E57;
+    margin-top: -1rem;
+  }
+
+  .images-collage {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+  }
+  
+  .left-image-container {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-image-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    border: 1px solid #EDEFEE;
+    border-radius: 15px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .left-image-container img {
+    width: 100%;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .right-image-container {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right-image-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 7px;
+    border: 1px solid #EDEFEE;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .right-image-container img {
+    width: 100%;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    .our-story-about-text {
+      width: 45%;
+    }
+  
+    .images-collage {
+      width: 45%;
+    }
+  }

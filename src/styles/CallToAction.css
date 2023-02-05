@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.section-container {
+    background-color: #495E57;
+    color: #FFFFFF;
+    padding: 1.5rem 10rem;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-text {
+    /*width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-start;
+}
+
+.main-title {
+    font-family: 'Markazi Text', serif;
+    font-size: 64pt;
+    color: #F4CE14;
+}
+
+.sub-title {
+    font-family: 'Markazi Text', serif;
+    font-size: 40pt;
+    margin: -2rem 0 2rem 0;
+}
+
+.text {
+    font-family: 'Karla', sans-serif;
+    max-width: 400px;
+    font-size: 14pt;
+}
+
+.hero-image {
+    /*width: 100%;*/
+    padding-top: 2rem;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.hero-action {
+    padding-top: 85px;
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-image img {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+  }

@@ -1,0 +1,15 @@
+.booking-form-section {
+    padding: 1.5rem 30rem;
+}
+
+.booking-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.booking-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }

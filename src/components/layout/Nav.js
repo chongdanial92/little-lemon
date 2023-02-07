@@ -3,6 +3,7 @@ import { useState } from "react";
 import "../../styles/Nav.css"
 import HamburgerMenuIconOpen from "../../images/hamburger-menu-open.svg";
 import HamburgerMenuIconClose from "../../images/hamburger-menu-close.svg";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,12 +16,12 @@ function Nav() {
     <>
       <nav className={`navigation-container ${isMenuOpen ? "navigation-menu-open" : ""}`}>
         <menu>
-          <li><a href="">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">MENU</a></li>
-          <li><a href="">RESERVATIONS</a></li>
-          <li><a href="">ORDER ONLINE</a></li>
-          <li><a href="">LOGIN</a></li>
+          <li onClick={toggleMenu}><Link to="/">Home</Link></li>
+          <li onClick={toggleMenu}><Link to="/">About</Link></li>
+          <li onClick={toggleMenu}><Link to="/">Menu</Link></li>
+          <li onClick={toggleMenu}><a href=""><Link to="/booking">Reservations</Link></a></li>
+          <li onClick={toggleMenu}><a href=""><Link to="/">Order Online</Link></a></li>
+          <li onClick={toggleMenu}><a href=""><Link to="/">Login</Link></a></li>
         </menu>
       </nav>
       <button className="hamburger" onClick={toggleMenu}>

@@ -3,11 +3,33 @@
     display: inline-block;
     font-size: 1.125rem;
     font-weight: 800;
-    border: 1px solid ;
+    border: 1px solid;
     background-color: #F4CE14;
     color: #000000;
     padding: 0.5rem 1rem;
     border-radius: 15px;
     transition: all 0.3s;
     color: #495E57;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #FFE228;
+    background-color: #FFE228;
+}
+
+.btn:active {
+    border: 1px solid #000000;
+    background-color: #495E57;
+    color: #FFFFFF;
+    box-shadow: none;
+  }
+
+.disabled,
+.disabled:hover,
+.disabled:active {
+    box-shadow: none;
+    background-color: rgb(179, 179, 179);
+    color: rgb(121, 121, 121);
+    border: 2px solid rgb(121, 121, 121);
 }

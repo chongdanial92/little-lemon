@@ -20,7 +20,7 @@ function Stars({ ratings }) {
     }
   
     return (
-      <div className="starsContainer">
+      <div className="ratings-container">
         {elements.map((x, index) => (
             <img key={index} src={StarIcon} alt="" className='star-rating-icon'/>
         ))}

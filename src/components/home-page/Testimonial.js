@@ -20,14 +20,14 @@ function Testimonial() {
             id: "c2",
             image: TestimonialUserImage2,
             name: "Samantha Harris",
-            ratings: 4.5,
+            ratings: 5,
             quote: "A must visit restaurant if you are a foodie in Chicago, their lemon deseert is fantastic",
         },
         {
             id: "c3",
             image: TestimonialUserImage3,
             name: "Royce Butler",
-            ratings: 4.5,
+            ratings: 5,
             quote: "Great restaurant, lovely food, great service. Highlgy recommended when you're in Chicago",
         },
         {

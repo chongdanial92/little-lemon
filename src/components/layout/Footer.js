@@ -44,7 +44,7 @@ function Footer() {
           </div>
           <div className='links-block'>
           <p>Social Media</p>
-          <div>
+          <div class="social-media-icons">
             <img src={FacebookIcon} alt="Little Lemon Facebook Page"/>
             <img src={WhatsappIcon} alt="Little Lemon Whatsapp Page"/>
             <img src={InstagramIcon} alt="Little Lemon Instagram Page"/>

@@ -1,7 +1,8 @@
 import React from 'react'
 import CallToActionImage from "../../images/call-to-action.jpg";
-import "../../styles/CallToAction.css";
 import Button from "../ui/Button";
+import { Link } from "react-router-dom";
+import "../../styles/CallToAction.css";
 
 function CallToAction() {
     return (
@@ -14,8 +15,10 @@ function CallToAction() {
                         We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                     </div>
                     <div className="hero-action">
-                    <Button>Reserve a Table</Button>
-                </div>
+                        <Button>
+                            <Link to="/booking">Reserve a Table</Link>
+                        </Button>
+                    </div>
                 </div>
                 <div className="hero-image">
                     <img

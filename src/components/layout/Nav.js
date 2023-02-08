@@ -1,9 +1,9 @@
 import React from 'react'
 import { useState } from "react";
-import "../../styles/Nav.css"
 import HamburgerMenuIconOpen from "../../images/hamburger-menu-open.svg";
 import HamburgerMenuIconClose from "../../images/hamburger-menu-close.svg";
 import { Link } from "react-router-dom";
+import "../../styles/Nav.css"
 
 function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +19,9 @@ function Nav() {
           <li onClick={toggleMenu}><Link to="/">Home</Link></li>
           <li onClick={toggleMenu}><Link to="/">About</Link></li>
           <li onClick={toggleMenu}><Link to="/">Menu</Link></li>
-          <li onClick={toggleMenu}><a href=""><Link to="/booking">Reservations</Link></a></li>
-          <li onClick={toggleMenu}><a href=""><Link to="/">Order Online</Link></a></li>
-          <li onClick={toggleMenu}><a href=""><Link to="/">Login</Link></a></li>
+          <li onClick={toggleMenu}><Link to="/booking">Reservations</Link></li>
+          <li onClick={toggleMenu}><Link to="/">Order Online</Link></li>
+          <li onClick={toggleMenu}><Link to="/">Login</Link></li>
         </menu>
       </nav>
       <button className="hamburger" onClick={toggleMenu}>

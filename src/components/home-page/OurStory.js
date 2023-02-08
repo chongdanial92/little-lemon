@@ -9,7 +9,7 @@ function OurStory() {
         <div className="our-story-container">
             <h2 className="our-story-title">Our Story</h2>
             <div className="our-story-content">
-                <div class="our-story-about-text">
+                <div className="our-story-about-text">
                     <div className="display-title">Little Lemon</div>
                     <div className="display-subtitle">Chicago</div>
                     <div className="display-text">

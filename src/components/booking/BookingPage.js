@@ -5,6 +5,7 @@ import useSubmit from "../../hooks/useSubmit";
 import "../../styles/BookingPage.css"
 import { fetchAPI } from "../../api/api";
 import { useAlertContext } from '../../context/alert-context';
+import ConfirmedBooking from './ConfirmedBooking';
 
 export const updateTimes = (state, action) => {
     switch (action.type) {
@@ -48,16 +49,18 @@ function BookingPage() {
         <>
             <section className='booking-form-section'>
                 <div className='booking-form-container'>
-                    <h2>Please fill up the form to book a table</h2>
                     {isFormDisplay ?
-                        <BookingForm
-                            availableTimes={availableTimes}
-                            isLoading={isLoading}
-                            occasions={occasions}
-                            updateTimes={updateTimesHandler}
-                            submitAPI={submitAPI}
-                        /> :
-                        <h2>Reservations is Made asshole</h2>
+                        <>
+                            <h2>Please fill up the form to book a table</h2>
+                            <BookingForm
+                                availableTimes={availableTimes}
+                                isLoading={isLoading}
+                                occasions={occasions}
+                                updateTimes={updateTimesHandler}
+                                submitAPI={submitAPI}
+                            />
+                        </> :
+                        <ConfirmedBooking />
                     }
                 </div>
             </section>

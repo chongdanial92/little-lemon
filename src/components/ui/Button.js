@@ -3,7 +3,7 @@ import "../../styles/Button.css"
 
 function Button({ children, onClick, isSubmit, disabled, fullWidth }) {
   return (
-    <button className={disabled ? 'btn disabled' : 'btn'} onClick={onClick} disabled={disabled} type={isSubmit && "submit"} style={fullWidth && { width: "100%" }}
+    <button className={disabled ? 'btn disabled' : 'btn'} onClick={onClick} disabled={disabled} type={isSubmit && "submit"} style={fullWidth && { width: "100%" }} aria-label="On Click"
     >
       {children}
     </button>
